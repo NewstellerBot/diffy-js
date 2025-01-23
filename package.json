@@ -1,32 +1,34 @@
 {
-    "name": "diffy-js",
-    "version": "0.0.1",
-    "description": "Unofficial typescript library for the diffy LLM API.",
-    "keywords": [
-        "llm",
-        "api",
-        "typescript",
-        "ai"
-    ],
-    "homepage": "https://github.com/NewstellerBot/diffy-js",
-    "bugs": {
-        "url": "https://github.com/NewstellerBot/diffy-js"
-    },
-    "author": "Krystian Nowak <krystian@uni.minerva.edu>",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/NewstellerBot/diffy-js.git"
-    },
-    "files": [
-        "dist"
-    ],
-    "type": "module",
-    "license": "MIT",
-    "devDependencies": {
-        "typescript": "^5.7.3"
-    },
-    "scripts": {
-        "build": "tsc",
-        "ci": "npm run build"
-    }
+  "name": "diffy-js",
+  "version": "0.0.1",
+  "description": "Unofficial typescript library for the diffy LLM API.",
+  "keywords": [
+    "llm",
+    "api",
+    "typescript",
+    "ai"
+  ],
+  "homepage": "https://github.com/NewstellerBot/diffy-js",
+  "bugs": {
+    "url": "https://github.com/NewstellerBot/diffy-js"
+  },
+  "author": "Krystian Nowak <krystian@uni.minerva.edu>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NewstellerBot/diffy-js.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write .",
+    "ci": "npm run build"
+  }
 }
