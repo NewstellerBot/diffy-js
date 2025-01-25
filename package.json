@@ -1,41 +1,41 @@
 {
-    "name": "diffy-js",
-    "version": "0.0.1",
-    "description": "Unofficial typescript library for the diffy LLM API.",
-    "keywords": [
-        "llm",
-        "api",
-        "typescript",
-        "ai"
-    ],
-    "homepage": "https://github.com/NewstellerBot/diffy-js",
-    "bugs": {
-        "url": "https://github.com/NewstellerBot/diffy-js"
-    },
-    "author": "Krystian Nowak <krystian@uni.minerva.edu>",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/NewstellerBot/diffy-js.git"
-    },
-    "main": "dist/index.js",
-    "files": [
-        "dist"
-    ],
-    "type": "module",
-    "license": "MIT",
-    "devDependencies": {
-        "@arethetypeswrong/cli": "^0.17.3",
-        "@changesets/cli": "^2.27.11",
-        "prettier": "^3.4.2",
-        "typescript": "^5.7.3"
-    },
-    "scripts": {
-        "build": "tsc",
-        "format": "prettier --write .",
-        "check-format": "prettier --check .",
-        "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
-        "local-release": "changeset version && changeset publish",
-        "ci": "npm run build && npm run check-format && npm run check-exports",
-        "prepublishOnly": "npm run ci"
-    }
+  "name": "diffy-js",
+  "version": "0.0.1",
+  "description": "Unofficial typescript library for the diffy LLM API.",
+  "keywords": [
+    "llm",
+    "api",
+    "typescript",
+    "ai"
+  ],
+  "homepage": "https://github.com/NewstellerBot/diffy-js",
+  "bugs": {
+    "url": "https://github.com/NewstellerBot/diffy-js"
+  },
+  "author": "Krystian Nowak <krystian@uni.minerva.edu>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NewstellerBot/diffy-js.git"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.17.3",
+    "@changesets/cli": "^2.27.11",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write .",
+    "check-format": "prettier --check .",
+    "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
+    "local-release": "changeset version && changeset publish",
+    "ci": "npm run build && npm run check-format && npm run check-exports",
+    "prepublishOnly": "npm run ci"
+  }
 }
